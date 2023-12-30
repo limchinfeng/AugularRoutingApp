@@ -76,6 +76,12 @@
 
 <main class="main">
   <div class="content">
+    <div class="content">
+      <a routerLink="">Home - </a>
+      <a routerLink="second">Second Page - </a>
+      <a href="#" (click)="$event.preventDefault(); goToContact();">Contact Page - </a>
+      <a routerLink="ddddd">Error Page</a>:
+    </div>
     <router-outlet></router-outlet>
   </div>
 </main>
