@@ -4,7 +4,9 @@
     *ngFor="let product of products"
   >
     <h4>
-      {{product.name}}
+      <a [routerLink]="['/products', product.id]">
+        {{product.name}}
+      </a>
     </h4>
   </div>
 </div>
